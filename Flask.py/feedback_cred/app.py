@@ -8,6 +8,6 @@ def feedback():
         name = request.form.get("username")
         message = request.form.get("Message")
 
-        return render_template("thankyou.html" , user=name , message = message)
+        return render_template("templates2/thankyou.html" , user=name , message = message)
     
     return render_template("feedback.htnl")
